@@ -9,7 +9,6 @@ module Spree
 
     def create_order_in_fetchapp
       begin 
-binding.pry
 
         # never mess with the standard order flow.  
         Thread.new {
@@ -17,7 +16,7 @@ binding.pry
           Fetchapp.publish_order self
         }
       rescue => e
-binding.pry
+
         # i don't care if this fails.  We try all products in the system (some of which may not be fetchapp-ified), as we 
         # retain no knowledge of fetchapp details within our spree app
         # We can manually synch any orders on-demand later in the admin app

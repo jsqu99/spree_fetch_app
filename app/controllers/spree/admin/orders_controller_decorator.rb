@@ -4,7 +4,6 @@ module Spree
 
       # this is called via ajax so maybe we eventually return a count of all orders synched?
       def fetchapp_synch
-
         Fetchapp.establish_connection
 
         Spree::Order.find_each do |order| 
@@ -16,6 +15,7 @@ module Spree
             nil
           end
         end
+        redirect_to admin_orders_path
       end
     end
   end
