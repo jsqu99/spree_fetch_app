@@ -10,4 +10,5 @@ else
   gem "ruby-debug19"
 end
 
+gem 'fetchapp-api-ruby', :git => 'git://github.com/getsy/fetchapp-api-ruby.git'
 gemspec

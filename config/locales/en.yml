@@ -2,4 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  fetchapp_signup: "Need an account? Sign Up!"
+  fetchapp_app_name: "Fetchapp App Name (e.g. foo.fetchapp.com)"
+  fetchapp_login: "Fetchapp Login"
+  fetchapp_password: "Fetchapp Password"
+  fetchapp_settings: "Fetchapp Settings"
+  fetchapp_settings_description: "Configure Access to Fetchapp"
+  fetchapp_synch_orders: "Fetchapp Synch"

@@ -16,5 +16,10 @@ module SpreeFetchapp
     end
 
     config.to_prepare &method(:activate).to_proc
+
+    initializer "spree.fetchapp.preferences", :after => "spree.environment" do |app|
+      SpreeFetchapp::Config = Spree::FetchappConfiguration.new
+    end
+
   end
 end
