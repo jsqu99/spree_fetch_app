@@ -21,5 +21,7 @@ module SpreeFetchapp
       SpreeFetchapp::Config = Spree::FetchappConfiguration.new
     end
 
+    # Activate the variant sku observer
+    config.active_record.observers = "Spree::VariantObserver".to_sym
   end
 end

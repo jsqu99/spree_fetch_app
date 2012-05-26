@@ -22,4 +22,9 @@ class Fetchapp
                                    )
 
   end    
+
+  def self.update_sku(old_sku, new_sku)
+    item = FetchAPI::Item.find(old_sku)
+    item.update(:sku => new_sku)
+  end
 end
