@@ -8,4 +8,7 @@ en:
   fetchapp_password: "Fetchapp Password"
   fetchapp_settings: "Fetchapp Settings"
   fetchapp_settings_description: "Configure Access to Fetchapp"
+  fetchapp_synch_order: "Fetchapp Synch"
   fetchapp_synch_orders: "Fetchapp Synch"
+  fetchapp_synch_completed: "Synch Completed"
+  fetchapp_synch_error: "Synch Error"

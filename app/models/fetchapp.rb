@@ -9,8 +9,8 @@ class Fetchapp
   end
 
   def self.publish_order(order)
-    skus = order.line_items.map { |li| li.product.sku }
-    order_items = skus.inject([]) {|agg, sku| agg << {:sku => sku}}
+    sku_price_pairs = order.line_items.map { |li| [li.product.sku, li.price] }
+    order_items = sku_price_pairs.inject([]) {|agg, pair| agg << {:sku => pair[0], :price => pair[1]}}
     
     order = FetchAPI::Order.create(
                                    :id => order.number,
