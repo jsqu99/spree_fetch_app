@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_fetchapp'
   s.version     = '1.0.0'
-  s.summary     = 'This Gem allows a Spree store to integrate with FetchApp for seamless digital delivery.'
-  # s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Spree extension for FetchApp Digital Delivery.'
+  s.description = 'This Gem allows a Spree store to integrate with FetchApp for seamless digital delivery.'
   s.required_ruby_version = '>= 1.8.7'
 
    s.author            = 'Jeff Squires'
