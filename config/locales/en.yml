@@ -5,7 +5,7 @@ en:
   fetch_app_signup: "Need an account? Sign Up!"
   fetch_app_app_name: "FetchApp App Name (e.g. foo.fetch_app.com)"
   fetch_app_api_key: "FetchApp API Key"
-  fetch_app_password: "FetchApp API Token"
+  fetch_app_api_token: "FetchApp API Token"
   fetch_app_settings: "FetchApp Settings"
   fetch_app_settings_description: "Configure Access to FetchApp"
   fetch_app_synch_order: "FetchApp Synch"

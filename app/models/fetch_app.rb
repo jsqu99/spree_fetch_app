@@ -2,8 +2,8 @@ class FetchApp
   def self.establish_connection
     # TODO: Mike, how often must this be done?  once at server startup?
     app_name = SpreeFetchApp::Config[:app_name]
-    login    = SpreeFetchApp::Config[:login]
-    password = SpreeFetchApp::Config[:password]
+    login    = SpreeFetchApp::Config[:api_key]
+    password = SpreeFetchApp::Config[:api_token]
 
     FetchAPI::Base.basic_auth(app_name, login, password)
   end

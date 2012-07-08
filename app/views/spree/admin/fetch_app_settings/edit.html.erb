@@ -11,12 +11,12 @@
     <%= text_field_tag 'preferences[app_name]', SpreeFetchApp::Config[:app_name], :size => "30", :class => "input_string" %>
     <br/>
 
-    <%= label_tag('login', t(:fetch_app_login) + ': ') + tag(:br) %>
-    <%= text_field_tag 'preferences[login]', SpreeFetchApp::Config[:login], :size => "20", :class => "input_string" %>
+    <%= label_tag('api_key', t(:fetch_app_api_key) + ': ') + tag(:br) %>
+    <%= text_field_tag 'preferences[api_key]', SpreeFetchApp::Config[:api_key], :size => "20", :class => "input_string" %>
     <br/>
 
-    <%= label_tag('password', t(:fetch_app_password) + ': ') + tag(:br) %>
-    <%= text_field_tag 'preferences[password]', SpreeFetchApp::Config[:password], :size => "20", :class => "input_string" %>
+    <%= label_tag('api_token', t(:fetch_app_api_token) + ': ') + tag(:br) %>
+    <%= text_field_tag 'preferences[api_token]', SpreeFetchApp::Config[:api_token], :size => "20", :class => "input_string" %>
     <br/>
 
 
