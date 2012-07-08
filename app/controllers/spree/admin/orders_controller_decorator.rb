@@ -2,11 +2,11 @@ module Spree
   module Admin
     OrdersController.class_eval do
 
-      def fetchapp_synch
-        Fetchapp.establish_connection
+      def fetch_app_synch
+        FetchApp.establish_connection
 
         begin 
-          Fetchapp.publish_order (Spree::Order.find_by_number params[:id])
+          FetchApp.publish_order (Spree::Order.find_by_number params[:id])
 
           respond_to do |format|
             format.js
@@ -20,15 +20,15 @@ module Spree
         end
       end
 
-      def fetchapp_synch_all
-        Fetchapp.establish_connection
+      def fetch_app_synch_all
+        FetchApp.establish_connection
         
         Spree::Order.find_each do |order| 
           begin 
-            Fetchapp.publish_order order
+            FetchApp.publish_order order
           rescue
-            # i don't care if this fails.  We try all products in the system (some of which may not be fetchapp-ified), as we 
-            # retain no knowledge of fetchapp details within our spree app
+            # i don't care if this fails.  We try all products in the system (some of which may not be fetch_app-ified), as we 
+            # retain no knowledge of fetch_app details within our spree app
             nil
           end
         end

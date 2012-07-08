@@ -1,6 +1,6 @@
-module SpreeFetchapp
+module SpreeFetchApp
   class Engine < Rails::Engine
-    engine_name 'spree_fetchapp'
+    engine_name 'spree_fetch_app'
 
     config.autoload_paths += %W(#{config.root}/lib)
 
@@ -17,8 +17,8 @@ module SpreeFetchapp
 
     config.to_prepare &method(:activate).to_proc
 
-    initializer "spree.fetchapp.preferences", :after => "spree.environment" do |app|
-      SpreeFetchapp::Config = Spree::FetchappConfiguration.new
+    initializer "spree.fetch_app.preferences", :after => "spree.environment" do |app|
+      SpreeFetchApp::Config = Spree::FetchAppConfiguration.new
     end
 
     # Activate the variant sku observer

@@ -2,13 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  fetchapp_signup: "Need an account? Sign Up!"
-  fetchapp_app_name: "Fetchapp App Name (e.g. foo.fetchapp.com)"
-  fetchapp_login: "Fetchapp Login"
-  fetchapp_password: "Fetchapp Password"
-  fetchapp_settings: "Fetchapp Settings"
-  fetchapp_settings_description: "Configure Access to Fetchapp"
-  fetchapp_synch_order: "Fetchapp Synch"
-  fetchapp_synch_orders: "Fetchapp Synch"
-  fetchapp_synch_completed: "Synch Completed"
-  fetchapp_synch_error: "Synch Error"
+  fetch_app_signup: "Need an account? Sign Up!"
+  fetch_app_app_name: "FetchApp App Name (e.g. foo.fetch_app.com)"
+  fetch_app_api_key: "FetchApp API Key"
+  fetch_app_password: "FetchApp API Token"
+  fetch_app_settings: "FetchApp Settings"
+  fetch_app_settings_description: "Configure Access to FetchApp"
+  fetch_app_synch_order: "FetchApp Synch"
+  fetch_app_synch_orders: "FetchApp Synch"
+  fetch_app_synch_completed: "Synch Completed"
+  fetch_app_synch_error: "Synch Error"

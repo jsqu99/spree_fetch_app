@@ -1,0 +1,9 @@
+<% html_str = ""%>
+<% if flash[:error] %>
+  <%  html_str = "<span class='flash error'>#{t(:fetch_app_synch_error)}: #{flash[:error]}</span>" %>
+<% else %>
+  <%  html_str = "<span class='flash notice'>#{t(:fetch_app_synch_completed)}</span>" %>
+<% end %>
+
+
+$('#fetch_app_synch_notification').html("<%= html_str.html_safe %> ");

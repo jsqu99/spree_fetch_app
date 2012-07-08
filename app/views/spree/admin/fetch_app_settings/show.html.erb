@@ -1,0 +1,23 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= t(:fetch_app_settings) %></h1>
+
+<table id='listing_fetch_app_settings'>
+  <tr>
+    <th scope="row"><%= t(:fetch_app_app_name) %>:</th>
+    <td><%= SpreeFetchApp::Config[:app_name] %></td>
+  </tr>
+  <tr>
+    <th scope="row"><%= t(:fetch_app_login) %>:</th>
+    <td><%= SpreeFetchApp::Config[:login] %></td>
+  </tr>
+  <tr>
+    <th scope="row"><%= t(:fetch_app_password) %>:</th>
+    <td><%= SpreeFetchApp::Config[:password] %></td>
+  </tr>
+
+</table>
+
+<p data-hook="buttons">
+  <%= link_to_with_icon 'edit', t(:edit), edit_admin_fetch_app_settings_path %>
+</p>

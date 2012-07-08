@@ -1,5 +1,5 @@
-class Spree::FetchappConfiguration < Spree::Preferences::Configuration
+class Spree::FetchAppConfiguration < Spree::Preferences::Configuration
   preference :app_name, :string
-  preference :login, :string
-  preference :password, :string
+  preference :fetch_app_api_key, :string
+  preference :fetch_app_api_token, :string
 end

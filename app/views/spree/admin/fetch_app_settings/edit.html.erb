@@ -1,0 +1,28 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= t(:fetch_app_settings) %></h1>
+
+  <%= link_to t(:fetch_app_signup), 'http://www.fetchapp.com/' %>
+
+<%= form_tag admin_fetch_app_settings_path, :method => :put do %>
+
+    <%= label_tag('app_name', t(:fetch_app_app_name) + ': ') + tag(:br) %>
+    <%# I wanted to use preference_field_tag, but the text field size is locked in at 10! %>
+    <%= text_field_tag 'preferences[app_name]', SpreeFetchApp::Config[:app_name], :size => "30", :class => "input_string" %>
+    <br/>
+
+    <%= label_tag('login', t(:fetch_app_login) + ': ') + tag(:br) %>
+    <%= text_field_tag 'preferences[login]', SpreeFetchApp::Config[:login], :size => "20", :class => "input_string" %>
+    <br/>
+
+    <%= label_tag('password', t(:fetch_app_password) + ': ') + tag(:br) %>
+    <%= text_field_tag 'preferences[password]', SpreeFetchApp::Config[:password], :size => "20", :class => "input_string" %>
+    <br/>
+
+
+  <p class="form-buttons">
+    <%= button t(:update) %>
+    <%= t(:or) %> <%= link_to t(:cancel), admin_fetch_app_settings_url %>
+  </p>
+
+<% end %>

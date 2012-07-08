@@ -1,2 +1,2 @@
 require 'spree_core'
-require 'spree_fetchapp/engine'
+require 'spree_fetch_app/engine'

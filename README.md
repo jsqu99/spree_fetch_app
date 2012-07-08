@@ -1,4 +1,4 @@
-SpreeFetchapp
+SpreeFetchApp
 =============
 
 Introduction goes here.
