@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_fetchapp'
+  s.name        = 'spree_fetch_app'
   s.version     = '1.0.0'
   s.summary     = 'Spree extension for FetchApp Digital Delivery.'
   s.description = 'This Gem allows a Spree store to integrate with FetchApp for seamless digital delivery.'
