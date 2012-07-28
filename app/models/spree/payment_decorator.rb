@@ -1,14 +1,10 @@
-require 'fetchapp-api-ruby'
-
 module Spree
-
-  Order.class_eval do
-    Spree::Order.state_machines[:state].after_transition :to => 'complete', :do => :create_order_in_fetch_app, :if => :allow_push_to_fetch_app?
-
+  Payment.class_eval do
+    Spree::Payment.state_machines[:state].after_transition :to => 'completed', :do => :create_order_in_fetch_app, :if => :allow_push_to_fetch_app?
     private
 
     def allow_push_to_fetch_app?
-      SpreeFetchApp::Config[:push_on_order_complete]
+      !SpreeFetchApp::Config[:push_on_order_complete]
     end
 
     def create_order_in_fetch_app
@@ -17,7 +13,7 @@ module Spree
         # never mess with the standard order flow.  
         Thread.new {
           FetchApp.establish_connection
-          FetchApp.publish_order self
+          FetchApp.publish_order self.order
         }
       rescue => e
 
@@ -29,3 +25,4 @@ module Spree
     end
   end
 end
+

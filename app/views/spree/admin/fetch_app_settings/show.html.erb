@@ -15,7 +15,10 @@
     <th scope="row"><%= t(:fetch_app_api_token) %>:</th>
     <td><%= SpreeFetchApp::Config[:api_token] %></td>
   </tr>
-
+  <tr>
+    <th scope="row"><%= t(:fetch_app_push_on_order_complete) %>:</th>
+    <td><%= SpreeFetchApp::Config[:push_on_order_complete] %></td>
+  </tr>
 </table>
 
 <p data-hook="buttons">

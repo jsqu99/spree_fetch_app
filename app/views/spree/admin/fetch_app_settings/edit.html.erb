@@ -19,6 +19,10 @@
     <%= text_field_tag 'preferences[api_token]', SpreeFetchApp::Config[:api_token], :size => "20", :class => "input_string" %>
     <br/>
 
+    <%= label_tag('push_on_order_complete', t(:fetch_app_push_on_order_complete) + ': ') + tag(:br) %>
+    <%= hidden_field_tag('preferences[push_on_order_complete]', 0) %>
+    <%= check_box_tag 'preferences[push_on_order_complete]', 1, SpreeFetchApp::Config[:push_on_order_complete], :size => "20", :class => "input_string" %>
+    <br/>
 
   <p class="form-buttons">
     <%= button t(:update) %>
