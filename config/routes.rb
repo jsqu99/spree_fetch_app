@@ -10,5 +10,14 @@ Spree::Core::Engine.routes.prepend do
         get :fetch_app_synch_all
       end
     end
+
+    resources :products do
+      member do 
+        get :fetch_app_synch
+      end
+      collection do 
+        get :fetch_app_synch_all
+      end
+    end
   end
 end

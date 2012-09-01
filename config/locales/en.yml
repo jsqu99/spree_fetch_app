@@ -10,6 +10,8 @@ en:
   fetch_app_settings_description: "Configure Access to FetchApp"
   fetch_app_synch_order: "FetchApp Synch"
   fetch_app_synch_orders: "FetchApp Synch"
+  fetch_app_synch_product: "FetchApp Synch"
+  fetch_app_synch_products: "FetchApp Synch"
   fetch_app_synch_completed: "Synch Completed"
   fetch_app_synch_error: "Synch Error"
   fetch_app_push_on_order_complete: "Push to fetch on order complete (instead of payment received)?  Having this set to 'true' is riskier in that a user could cancel their payment and still access a download"
